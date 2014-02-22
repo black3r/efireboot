@@ -2,6 +2,13 @@ TEMPLATE = app
 CONFIG += console
 CONFIG -= app_bundle
 CONFIG -= qt
+unix: {
+    LIBS += -lefivar
+    SOURCES += efi-linux.c
+}
 
-SOURCES += main.cpp
+SOURCES += main.c
+
+HEADERS += \
+    efi.h
 
