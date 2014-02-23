@@ -5,6 +5,10 @@
 #define EFI_GLOBAL_VARIABLE \
     EFI_GUID( 0x8BE4DF61, 0x93CA, 0x11d2, 0xAA0D, 0x00, 0xE0, 0x98, 0x03, 0x2B, 0x8C)
 
+void efi_init() {
+
+}
+
 int read_efi_variable(const char* name, uint16_t** data) {
     uint16_t *res = NULL;
     efi_guid_t guid = EFI_GLOBAL_VARIABLE;
