@@ -63,7 +63,6 @@ int read_efi_variable(const char* name, uint16_t** data) {
 }
 
 int set_efi_variable(const char* name, uint16_t num) {
-    // Let's try to set the BootNext to DWORD 3 (Linux)
     int res = SetFirmwareEnvironmentVariable(
         ___T(name),
         ___T(EFI_GLOBAL_VARIABLE),
