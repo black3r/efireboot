@@ -22,7 +22,7 @@ int main()
     }
     set_boot_next(data[c]);
     printf("Set next boot target to: %s\n", boot_entry_name(data[c]));
-    reboot();
+    do_reboot();
 
     return 0;
 }

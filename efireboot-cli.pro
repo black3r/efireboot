@@ -4,7 +4,8 @@ CONFIG -= app_bundle
 CONFIG -= qt
 unix: {
     LIBS += -lefivar
-    SOURCES += efi-linux.c
+    SOURCES += efi-linux.c \
+               reboot-linux.c
 }
 
 win32: {
